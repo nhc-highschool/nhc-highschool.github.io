@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tổ Tin Học - THPT Nguyễn Hữu Cảnh</title>
+    Để đồng bộ trang Tổ Tin Học với trang chủ mà chúng ta đã làm, mình sẽ thay đổi bảng màu từ xanh lá (Green) sang hệ màu Navy - Blue - Cyan. Mình cũng sẽ tinh chỉnh lại các hiệu ứng để trang này trông hiện đại và chuyên nghiệp hơn.
+
+Dưới đây là đoạn mã CSS đã được phối màu lại cho "vừa mắt":
+
+HTML
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    :root {
+        --navy: #001f3f;
+        --blue: #007bff;
+        --cyan: #00d1ff;
+        --white: #ffffff;
+        --gray: #f4f7f6;
+        --text: #333;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background: var(--gray);
+        color: var(--text);
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: var(--navy);
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 15px;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    nav a {
+        color: var(--white);
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    nav a:hover {
+        color: var(--cyan);
+    }
+
+    /* HEADER */
+    header {
+        background: linear-gradient(135deg, var(--navy), var(--blue));
+        color: #fff;
+        padding: 60px 20px;
+        text-align: center;
+        margin-top: 50px;
+        border-bottom: 4px solid var(--cyan);
+    }
+
+    header h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    .container {
+        padding: 40px 10%;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .box {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        border-top: 5px solid var(--blue);
+    }
+
+    .title {
+        font-size: 28px;
+        color: var(--navy);
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .title::before {
+        content: "●";
+        color: var(--cyan);
+        margin-right: 10px;
+    }
+    .chapter {
+        background: #f0f7ff;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 15px 0;
+        border-left: 4px solid var(--cyan);
+        transition: transform 0.3s ease;
+    }
+
+    .chapter:hover {
+        transform: scale(1.01);
+        background: #e6f2ff;
+    }
+
+    .chapter h3 a {
+        text-decoration: none;
+        color: var(--blue);
+        transition: 0.3s;
+    }
+
+    .chapter h3 a:hover {
+        color: var(--navy);
+    }
+
+    .chapter img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .chapter ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .chapter li {
+        margin: 10px 0;
+        padding-left: 20px;
+        position: relative;
+    }
+
+    .chapter li::before {
+        content: "→";
+        position: absolute;
+        left: 0;
+        color: var(--blue);
+    }
+
+    .chapter li a {
+        text-decoration: none;
+        color: #444;
+        transition: 0.3s;
+    }
+
+    .chapter li a:hover {
+        color: var(--blue);
+        padding-left: 5px;
+    }
+
+    .section-label {
+        font-size: 18px;
+        font-weight: bold;
+        color: var(--navy);
+        display: block;
+        margin-top: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+    footer {
+        text-align: center;
+        padding: 30px;
+        background: var(--navy);
+        color: white;
+        font-size: 0.9rem;
+    }
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="trangchu.html">Trang Chủ</a>
+    <a href="#thongbao">Thông Báo</a>
+    <a href="#hocphan">Học Phần</a>
+</nav>
+
+<header>
+    <h1>Tổ Tin Học</h1>
+    <p>Website THPT Nguyễn Hữu Cảnh</p>
+</header>
+
+<div class="container">
+
+    <div class="box" id="gioithieu">
+        <h2 class="title">Giới Thiệu</h2>
+        <p>
+            Đây là fan web của học sinh THPT Nguyễn Hữu Cảnh. Các nội dung được tham khảo từ web chính <a href="https://thptnguyenhuucanh.hcm.edu.vn/to-tin-hoc-cong-nghe/c/72261">tại đây</a>
+        </p>
+    </div>
+
+    <div class="box" id="thongbao">
+        <h2 class="title">Thông Báo</h2>
+
+        <div class="chapter">
+            <img src="https://filethpt.hcm.edu.vn/uploadimages/news/2026/thptnguyenhuucanh/2026_1/16/gen-h-z738351730479681caa1332a27ec1a89fb181436dddebe_1612026855.jpg" alt="Tiết học STEM">
+            <h3><a href="https://thptnguyenhuucanh.hcm.edu.vn/to-tin-hoc-cong-nghe/to-tin-hoc-thuc-hien-tiet-hoc-stem-voi-chu-de-cuoc-phieu-luu-sang-tao/ct/72261/551191">Tổ Tin học thực hiện tiết học Stem với chủ đề: "CUỘC PHIÊU LƯU SÁNG TẠO"</a></h3>
+        </div>
+
+        <div class="chapter">
+            <h3><a href="https://thptnguyenhuucanh.hcm.edu.vn/to-tin-hoc-cong-nghe/to-tin-hoc-truong-thpt-nguyen-huu-canh-da-to-chuc-tiet-day-nghien-cuu-bai-hoc-v/ct/72261/549943">Tổ Tin học Trường THPT Nguyễn Hữu Cảnh đã tổ chức tiết dạy Nghiên cứu bài học với chủ đề: "Cơ sở dữ liệu quan hệ"</a></h3>
+        </div>
+    </div>
+
+    <div class="box" id="hocphan">
+        <h2 class="title">Học Phần</h2>
+
+        <div class="chapter">
+            <h3>Lớp 10</h3>
+            <ul>
+                <li><a href="https://vietjack.com/tin-hoc-10-kn/chu-de-1-may-tinh-va-xa-hoi-tri-thuc.jsp">Chủ Đề 1: Máy tính và xã hội tri thức</a></li>
+                <li><a href="https://vietjack.com/tin-hoc-10-kn/chu-de-2-mang-may-tinh-va-internet.jsp">Chủ Đề 2: Mạng máy tính và Internet</a></li>
+                <li><a href="https://vietjack.com/tin-hoc-10-kn/chu-de-3-dao-duc-phap-luat-va-van-hoa-trong-moi-truong-so.jsp">Chủ Đề 3: Đạo đức, pháp luật và văn hóa trong môi trường số</a></li>
+                <li><a href="https://vietjack.com/tin-hoc-10-kn/chu-de-4-ung-dung-tin-hoc.jsp">Chủ Đề 4: Ứng dụng tin học</a></li>
+                <li><a href="https://vietjack.com/tin-hoc-10-kn/chu-de-5-giai-quyet-van-de-voi-su-tro-giup-cua-may-tinh.jsp">Chủ đề 5: Giải quyết vấn đề với sự trợ giúp của máy tính</a></li>
+                <li><a href="https://vietjack.com/tin-hoc-10-kn/chu-de-6-huong-nghiep-voi-tin-hoc.jsp">Chủ đề 6: Hướng nghiệp với Tin học</a></li>
+            </ul>
+        </div>
+
+        <div class="chapter">
+            <h3>Lớp 11</h3>
+            <ul>
+                <li><a href="https://www.vietjack.com/tin-hoc-11-kn/chu-de-1-may-tinh-va-xa-hoi-tri-thuc-khmt.jsp">Chủ đề 1: Máy tính và xã hội tri thức</a></li>
+                <li><a href="https://vietjack.com/tin-hoc-11-kn/chu-de-2-to-chuc-luu-tru-tim-kiem-va-trao-doi-thong-tin-khmt.jsp">Chủ đề 2: Tổ chức lưu trữ, tìm kiếm và trao đổi thông tin</a></li>
+                <li><a href="https://vietjack.com/tin-hoc-11-kn/chu-de-3-dao-duc-phap-luat-va-van-hoa-trong-moi-truong-so-khmt.jsp">Chủ đề 3: Đạo đức, pháp luật và văn hóa trong môi trường số</a></li>
+                <li><a href="https://vietjack.com/tin-hoc-11-kn/chu-de-4-gioi-thieu-cac-he-co-so-du-lieu-khmt.jsp">Chủ đề 4: Giới thiệu các hệ cơ sở dữ liệu</a></li>
+                <li><a href="https://vietjack.com/tin-hoc-11-kn/chu-de-5-huong-nghiep-voi-tin-hoc-khmt.jsp">Chủ đề 5: Hướng nghiệp với tin học</a></li>
+                <li><span class="section-label">Định Hướng Tin Học Ứng Dụng</span></li>
+                <li><a href="https://vietjack.com/tin-hoc-11-kn/chu-de-6-thuc-hanh-tao-va-khai-thac-co-so-du-lieu-thud.jsp">Chủ đề 6: Thực hành tạo và khai thác cơ sở dữ liệu</a></li>
+                <li><a href="https://vietjack.com/tin-hoc-11-kn/chu-de-7-phan-mem-chinh-sua-anh-va-lam-video-thud.jsp">Chủ đề 7: Phần mềm chỉnh sửa ảnh và làm video</a></li>
+                <li><span class="section-label">Định Hướng Khoa Học Máy Tính</span></li>
+                <li><a href="https://vietjack.com/tin-hoc-11-kn/chu-de-6-ki-thuat-lap-trinh-khmt.jsp">Chủ đề 6: Kĩ thuật lập trình</a></li>
+            </ul>
+        </div>
+
+        <div class="chapter">
+            <h3>Lớp 12</h3>
+            <ul>
+                <li><a href="https://vietjack.com/tin-hoc-12-kn/chu-de-1-may-tinh-va-xa-hoi-tri-thuc.jsp">Chủ đề 1: Máy tính và xã hội tri thức</a></li>
+                <li><a href="https://vietjack.com/tin-hoc-12-kn/chu-de-2-mang-may-tinh-va-internet.jsp">Chủ đề 2: Mạng máy tính và internet</a></li>
+                <li><a href="https://vietjack.com/tin-hoc-12-kn/chu-de-3-dao-duc-phap-luat-va-van-hoa-trong-moi-truong-so.jsp">Chủ đề 3: Đạo đức, pháp luật và văn hóa trong môi trường số</a></li>
+                <li><a href="https://vietjack.com/tin-hoc-12-kn/chu-de-4-giai-quyet-van-de-voi-su-tro-giup-cua-may-tinh.jsp">Chủ đề 4: Giải quyết vấn đề với sự trợ giúp của máy tính</a></li>
+                <li><a href="https://vietjack.com/tin-hoc-12-kn/chu-de-5-huong-nghiep-voi-tin-hoc.jsp">Chủ đề 5: Hướng nghiệp với tin học</a></li>
+                <li><span class="section-label">Định Hướng Tin Học Ứng Dụng</span></li>
+                <li><a href="https://vietjack.com/tin-hoc-12-kn/chu-de-6-may-tinh-va-xa-hoi-tri-thuc-thud.jsp">Chủ đề 6: Máy tính và xã hội tri thức</a></li>
+                <li><a href="https://vietjack.com/tin-hoc-12-kn/chu-de-7-ung-dung-tin-hoc-thud.jsp">Chủ đề 7: Ứng dụng tin học</a></li>
+                <li><span class="section-label">Định Hướng Khoa Học Máy Tính</span></li>
+                <li><a href="https://vietjack.com/tin-hoc-12-kn/chu-de-6-mang-may-tinh-va-internet-khmt.jsp">Chủ đề 6: Mạng máy tính và internet</a></li>
+                <li><a href="https://vietjack.com/tin-hoc-12-kn/chu-de-7-giai-quyet-van-de-voi-su-tro-giup-cua-may-tinh-khmt.jsp">Chủ đề 7: Giải quyết vấn đề với sự trợ giúp của máy tính</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<footer>2026 THPT Nguyễn Hữu Cảnh - Tổ Tin Học</footer>
+
+</body>
+</html>

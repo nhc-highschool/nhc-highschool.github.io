@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOÁN 12 - THPT Nguyễn Hữu Cảnh</title>
+    <style>
+        html { scroll-behavior: smooth; }
+
+        :root {
+            --navy: #001f3f;
+            --blue: #007bff;
+            --cyan: #00d1ff;
+            --white: #ffffff;
+            --gray: #f4f6f8;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: var(--gray);
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, var(--navy), var(--blue));
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--cyan);
+        }
+        nav {
+            background: var(--navy);
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 12px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: var(--cyan); }
+
+        .container {
+            padding: 30px 10%;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .box {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--blue);
+        }
+
+        .title {
+            font-size: 26px;
+            color: var(--navy);
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--gray);
+            padding-bottom: 10px;
+        }
+        .chapter {
+            background: #f0f7ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 5px solid var(--cyan);
+        }
+
+        .chapter h3 { margin-top: 0; color: var(--blue); }
+
+        .chapter ul { list-style: none; padding-left: 0; }
+
+        .chapter li {
+            margin: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .chapter li::before {
+            content: "📚";
+            position: absolute;
+            left: 0;
+            font-size: 12px;
+        }
+
+        .chapter a {
+            text-decoration: none;
+            color: #444;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+
+        .chapter a:hover {
+            color: var(--blue);
+            padding-left: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: var(--navy);
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>📘 TOÁN 12</h1>
+    <p>Hành trình chinh phục kiến thức toán học phổ thông</p>
+</header>
+
+<nav>
+    <a href="trangchu.html">Trang chủ</a>
+    <a href="#hocky1">Học kỳ 1</a>
+    <a href="#hocky2">Học kỳ 2</a>
+</nav>
+
+<div class="container">
+
+    <div class="box" id="gioithieu">
+        <h2 class="title">👋 Chào mừng!</h2>
+        <p>Đây là website Toán học lớp 12 được thiết kế để tổng hợp lý thuyết, công thức và bài tập giúp việc học tập trở nên dễ dàng và hiệu quả hơn.</p>
+    </div>
+
+    <div class="box" id="hocky1">
+        <h2 class="title">📚 HỌC KỲ 1</h2>
+        <div class="chapter">
+            <h3>Chương 1: Ứng dụng đạo hàm & Hàm số</h3>
+            <ul>
+                <li><a href="https://vietjack.com/giai-toan-lop-12/index.jsp" target="_blank">Bài 1: Khảo sát hàm số</a></li>
+                <li><a href="https://vietjack.com/giai-toan-lop-12/ung-dung-dao-ham-khao-sat-ham-so.jsp" target="_blank">Bài 2: Cực trị hàm số</a></li>
+                <li><a href="https://vietjack.com/giai-toan-lop-12/gia-tri-lon-nhat-gia-tri-nho-nhat.jsp" target="_blank">Bài 3: GTLN - GTNN</a></li>
+                <li><a href="https://vietjack.com/giai-toan-lop-12/ham-so-mu.jsp" target="_blank">Bài 4: Hàm số mũ & Logarit</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="box" id="hocky2">
+        <h2 class="title">📖 HỌC KỲ 2</h2>
+        <div class="chapter">
+            <h3>Chương 3: Nguyên hàm - Tích phân & Hình học</h3>
+            <ul>
+                <li><a href="https://vietjack.com/giai-toan-lop-12/nguyen-ham.jsp" target="_blank">Bài 1: Nguyên hàm</a></li>
+                <li><a href="https://vietjack.com/giai-toan-lop-12/tich-phan.jsp" target="_blank">Bài 2: Tích phân</a></li>
+                <li><a href="https://vietjack.com/giai-toan-lop-12/so-phuc.jsp" target="_blank">Bài 3: Số phức</a></li>
+                <li><a href="https://vietjack.com/giai-toan-lop-12/phuong-trinh-mat-phang.jsp" target="_blank">Bài 4: Phương trình mặt phẳng</a></li>
+                <li><a href="https://vietjack.com/giai-toan-lop-12/phuong-trinh-duong-thang.jsp" target="_blank">Bài 5: Phương trình đường thẳng</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>2026 THPT Nguyễn Hữu Cảnh - Tổ Toán Học</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vật Lý THPT Nguyễn Hữu Cảnh</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --navy: #001f3f;
+            --blue: #007bff;
+            --cyan: #00d1ff;
+            --white: #ffffff;
+            --gray: #f4f4f9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: var(--gray);
+        }
+        header {
+            background: linear-gradient(135deg, var(--navy), var(--blue));
+            color: #fff;
+            padding: 3rem 0;
+            text-align: center;
+            border-bottom: 5px solid var(--cyan);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+        }
+        nav {
+            background: var(--navy);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 20px;
+            font-weight: bold;
+            transition: 0.3s;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: var(--cyan);
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            overflow: hidden;
+            padding: 40px 0;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+        .card {
+            background: #fff;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-left: 6px solid var(--blue);
+        }
+
+        .card h2, .card h3 {
+            color: var(--navy);
+            margin-top: 0;
+        }
+
+        footer {
+            background: var(--navy);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 40px;
+        }
+
+        .highlight {
+            color: var(--blue);
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        a {
+            color: var(--blue);
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        a:hover {
+            color: var(--navy);
+            text-decoration: underline;
+        }
+        [id] {
+            scroll-margin-top: 100px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #f0f7ff;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>TỔ VẬT LÝ - THPT NGUYỄN HỮU CẢNH</h1>
+    <p>Khám phá thế giới qua lăng kính khoa học</p>
+</header>
+
+<nav>
+    <a href="trangchu.html">Trang Chủ</a>
+    <a href="#tai-lieu">Tài Liệu</a>
+    <a href="#tin-tuc">Tin tức</a>
+    <a href="#lien-lac">Liên lạc</a>
+</nav>
+
+<div class="container">
+    <div class="main-content">
+        <section>
+            <div class="card" id="trang-chu">
+                <h2>Chào mừng các em học sinh!</h2>
+                <p>Đây là không gian học tập trực tuyến dành riêng cho môn Vật lý tại trường <strong>THPT Nguyễn Hữu Cảnh</strong>. Tại đây, các em có thể tìm thấy bài giảng, công thức và các mô phỏng thí nghiệm hấp dẫn.</p>
+            </div>
+
+            <div class="card" id="tai-lieu">
+                <h2>Chương trình trọng tâm</h2>
+                <ul>
+                    <li>
+                        <span class="highlight">Lớp 10:</span> Động học, Động lực học, Năng lượng.
+                        <br>
+                        👉 <a href="https://vietjack.com/vat-li-10-ct/ly-thuyet-chuong-2-mo-ta-chuyen-dong.jsp">Động học</a> | 
+                        <a href="https://vietjack.com/vat-li-10-ct/ly-thuyet-chuong-4-ba-dinh-luat-newton-mot-so-luc-trong-thuc-tien.jsp">Động lực học</a> | 
+                        <a href="https://vietjack.com/vat-li-10-ct/ly-thuyet-chuong-6-nang-luong.jsp">Năng lượng</a>
+                    </li>
+                    <li>
+                        <span class="highlight">Lớp 11:</span> Dòng điện, Dao động cơ, Sóng cơ.
+                        <br>
+                        👉 <a href="https://vietjack.com/vat-li-11-ct/ly-thuyet-chuong-3-dien-truong.jsp">Dòng điện</a> | 
+                        <a href="https://vietjack.com/vat-li-11-ct/ly-thuyet-chuong-1-dao-dong.jsp">Dao động</a> | 
+                        <a href="https://vietjack.com/vat-li-11-ct/ly-thuyet-chuong-2-song.jsp">Sóng</a>
+                    </li>
+                    <li>
+                        <span class="highlight">Lớp 12:</span> Nhiệt, Khí lí tưởng, Từ Trường, Vật lý hạt nhân.
+                        <br>
+                        👉 <a href="https://vietjack.com/vat-li-12-ct/ly-thuyet-chuong-1-vat-li-nhiet.jsp">Nhiệt</a> | 
+                        <a href="https://vietjack.com/vat-li-12-ct/ly-thuyet-chuong-2-khi-li-tuong.jsp">Khí lí tưởng</a> | 
+                        <a href="https://vietjack.com/vat-li-12-ct/ly-thuyet-chuong-3-tu-truong.jsp">Từ trường</a> | 
+                        <a href="https://vietjack.com/vat-li-12-ct/ly-thuyet-chuong-4-vat-li-hat-nhan.jsp">Vật lí hạt nhân</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <aside>
+            <div class="card" id="tin-tuc">
+                <h3>Tin tức mới nhất</h3>
+                <p>📌 Lịch thi giữa kỳ HK2 đã được cập nhật.</p>
+                <p>📌 Câu lạc bộ STEM Vật lý tuyển thành viên mới.</p>
+            </div>
+            <div class="card" id="lien-lac">
+                <h3>Liên hệ</h3>
+                <p>📧 Email: tovatly.nhc@gmail.com</p>
+                <p>📍 Phòng thí nghiệm: Tầng 2, Dãy B</p>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 THPT Nguyễn Hữu Cảnh - Tổ Vật Lý.</p>
+</footer>
+
+</body>
+</html>
+

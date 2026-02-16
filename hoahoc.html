@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HÓA 12 - THPT Nguyễn Hữu Cảnh</title>
+    <style>
+        html { scroll-behavior: smooth; }
+        :root {
+            --navy: #001f3f;
+            --blue: #007bff;
+            --cyan: #00d1ff;
+            --white: #ffffff;
+            --gray: #f4f6f8;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: var(--gray);
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, var(--navy), var(--blue));
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--cyan);
+        }
+
+        header h1 { margin: 0; font-size: 2.5rem; }
+        nav {
+            background: var(--navy);
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 12px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: var(--cyan); }
+
+        .container {
+            padding: 30px 10%;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .box {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--blue);
+        }
+
+        .title {
+            font-size: 26px;
+            color: var(--navy);
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--gray);
+            padding-bottom: 10px;
+        }
+        .chapter {
+            background: #f0f7ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 5px solid var(--cyan);
+            transition: transform 0.2s;
+        }
+
+        .chapter:hover { transform: translateX(5px); }
+
+        .chapter h3 { margin-top: 0; color: var(--blue); }
+
+        .chapter ul { list-style: none; padding-left: 0; }
+
+        .chapter li {
+            margin: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .chapter li::before {
+            content: "🧪";
+            position: absolute;
+            left: 0;
+            font-size: 14px;
+        }
+
+        .chapter a {
+            text-decoration: none;
+            color: #444;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+
+        .chapter a:hover {
+            color: var(--blue);
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: var(--navy);
+            color: white;
+            margin-top: 40px;
+        }
+        [id] { scroll-margin-top: 80px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>📘 HÓA HỌC 12</h1>
+    <p>Tổng hợp lý thuyết và tài liệu học tập Hóa học THPT</p>
+</header>
+
+<nav>
+    <a href="trangchu.html">Trang chủ</a>
+    <a href="#hocky1">Học kỳ 1</a>
+    <a href="#hocky2">Học kỳ 2</a>
+</nav>
+
+<div class="container">
+
+    <div class="box" id="gioithieu">
+        <h2 class="title">👋 Chào mừng!</h2>
+        <p>Đây là website Hóa học lớp 12 của mình. Mục tiêu giúp các bạn học sinh dễ dàng tra cứu lý thuyết, sơ đồ phản ứng và các ghi chú quan trọng một cách nhanh chóng.</p>
+    </div>
+
+    <div class="box" id="hocky1">
+        <h2 class="title">📚 HỌC KỲ 1</h2>
+
+        <div class="chapter">
+            <h3>Chương 1. Ester – Lipid – Xà phòng</h3>
+            <ul>
+                <li><a href="https://vietjack.com/hoa-hoc-12-ct/ly-thuyet-bai-1-ester-lipid.jsp" target="_blank">Bài 1: Ester – Lipid</a></li>
+                <li><a href="https://vietjack.com/hoa-hoc-12-ct/ly-thuyet-bai-2-xa-phong-va-chat-giat-rua-tong-hop.jsp" target="_blank">Bài 2: Xà phòng và chất giặt rửa</a></li>
+            </ul>
+        </div>
+
+        <div class="chapter">
+            <h3>Chương 2. Carbohydrate</h3>
+            <ul>
+                <li><a href="https://vietjack.com/hoa-hoc-12-ct/ly-thuyet-bai-3-glucose-va-fructose.jsp" target="_blank">Bài 3: Glucose và fructose</a></li>
+                <li><a href="https://vietjack.com/hoa-hoc-12-ct/ly-thuyet-bai-4-saccharose-va-maltose.jsp" target="_blank">Bài 4: Saccharose và maltose</a></li>
+                <li><a href="https://vietjack.com/hoa-hoc-12-ct/ly-thuyet-bai-5-tinh-bot-va-cellulose.jsp" target="_blank">Bài 5: Tinh bột và cellulose</a></li>
+            </ul>
+        </div>
+
+        <div class="chapter">
+            <h3>Chương 3. Hợp chất chứa Nitơ</h3>
+            <ul>
+                <li><a href="https://vietjack.com/hoa-hoc-12-ct/ly-thuyet-bai-6-amine.jsp" target="_blank">Bài 6: Amine</a></li>
+                <li><a href="https://vietjack.com/hoa-hoc-12-ct/ly-thuyet-bai-7-amino-acid-va-peptide.jsp" target="_blank">Bài 7: Amino acid và peptide</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="box" id="hocky2">
+        <h2 class="title">📚 HỌC KỲ 2</h2>
+
+        <div class="chapter">
+            <h3>Chương 5. Pin điện và điện phân</h3>
+            <ul>
+                <li><a href="https://vietjack.com/hoa-hoc-12-ct/ly-thuyet-bai-12-the-dien-cuc-va-nguon-dien-hoa-hoc.jsp" target="_blank">Bài 12: Thế điện cực & Nguồn điện</a></li>
+                <li><a href="https://vietjack.com/hoa-hoc-12-ct/ly-thuyet-bai-13-dien-phan.jsp" target="_blank">Bài 13: Điện phân</a></li>
+            </ul>
+        </div>
+
+        <div class="chapter">
+            <h3>Chương 6. Đại cương về kim loại</h3>
+            <ul>
+                <li><a href="https://vietjack.com/hoa-hoc-12-ct/ly-thuyet-bai-14-dac-diem-cau-tao-va-lien-ket-kin-loai.jsp" target="_blank">Bài 14: Cấu tạo & Liên kết kim loại</a></li>
+                <li><a href="https://vietjack.com/hoa-hoc-12-ct/ly-thuyet-bai-16-hop-kim-su-an-mon-kim-loai.jsp" target="_blank">Bài 15: Hợp kim & Ăn mòn</a></li>
+            </ul>
+        </div>
+
+        <div class="chapter">
+            <h3>Chương 7 & 8. Kim loại chuyển tiếp</h3>
+            <ul>
+                <li><a href="https://vietjack.com/hoa-hoc-12-ct/ly-thuyet-bai-17-nguyen-to-nhom-ia.jsp" target="_blank">Bài 16: Kim loại nhóm IA & IIA</a></li>
+                <li><a href="https://vietjack.com/hoa-hoc-12-ct/ly-thuyet-bai-19-dai-cuong-ve-kim-loai-chuyen-tiep-day-thu-nhat.jsp" target="_blank">Bài 17: Kim loại chuyển tiếp</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>2026 THPT Nguyễn Hữu Cảnh - Tổ Hóa Học</p>
+</footer>
+
+</body>
+</html>
+
